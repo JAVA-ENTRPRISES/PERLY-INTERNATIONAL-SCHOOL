@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pearly International School</title>
+    <link rel="icon" type="image/png" href="images/log.png">
+    <link
+      rel="icon"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <div id="header"></div>
+
+    <!-- ================= HERO / MODERN CAROUSEL ================= -->
+    <section class="relative w-full h-[420px] md:h-[600px] overflow-hidden">
+      <!-- Slides -->
+      <div id="slides" class="w-full h-full relative">
+        <!-- Slide 1 -->
+        <div
+          class="slide absolute inset-0 transition-opacity duration-1000 opacity-100"
+        >
+          <img src="images/school.jpg" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-black/50"></div>
+
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4"
+          >
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">
+              Welcome to Pearly International School
+            </h1>
+            <p class="text-lg md:text-xl max-w-2xl">
+              Inspiring young minds with quality education, strong values, and a bright future.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div
+          class="slide absolute inset-0 transition-opacity duration-1000 opacity-0"
+        >
+          <img src="images/student.avif" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-black/50"></div>
+
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4"
+          >
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">
+              Excellence in Education
+            </h1>
+            <p class="text-lg md:text-xl max-w-2xl">
+              Our dedicated teachers nurture creativity, knowledge, and confidence in every student.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div
+          class="slide absolute inset-0 transition-opacity duration-1000 opacity-0"
+        >
+          <img src="images/classroom.jpeg" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-black/50"></div>
+
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4"
+          >
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">
+              Modern Learning Environment
+            </h1>
+            <p class="text-lg md:text-xl max-w-2xl">
+              Smart classrooms, advanced facilities, and a safe campus for holistic development.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <button
+        onclick="prevSlide()"
+        class="absolute left-5 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/60 text-white p-3 rounded-full"
+      >
+        ❮
+      </button>
+
+      <button
+        onclick="nextSlide()"
+        class="absolute right-5 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/60 text-white p-3 rounded-full"
+      >
+        ❯
+      </button>
+
+      <!-- Dots -->
+      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-3">
+        <span
+          class="dot w-3 h-3 bg-white rounded-full opacity-100 cursor-pointer"
+          onclick="goSlide(0)"
+        ></span>
+        <span
+          class="dot w-3 h-3 bg-white rounded-full opacity-50 cursor-pointer"
+          onclick="goSlide(1)"
+        ></span>
+        <span
+          class="dot w-3 h-3 bg-white rounded-full opacity-50 cursor-pointer"
+          onclick="goSlide(2)"
+        ></span>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="py-20 bg-gradient-to-b from-gray-50 to-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Image -->
+          <div class="relative">
+            <img
+              src="images/campus.jpg"
+              class="rounded-3xl shadow-xl w-full hover:scale-105 transition duration-500"
+              alt="School Campus"
+            />
+
+            <!-- Small badge -->
+            <div
+              class="absolute bottom-6 left-6 bg-[#1F8A4C] text-white px-5 py-3 rounded-xl shadow-lg"
+            >
+              <p class="text-lg font-semibold">15+ Years of Excellence</p>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div>
+            <span class="text-[#0F6A3B] font-semibold uppercase tracking-wider">
+              About Our School
+            </span>
+
+            <h2
+              class="text-3xl md:text-4xl font-bold text-gray-800 mt-3 mb-5 leading-tight"
+            >
+              Nurturing Young Minds for a Bright Future
+            </h2>
+
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Pearly International School is committed to providing quality
+              education in a disciplined and caring environment. We focus on
+              academic excellence, moral values, and overall personality
+              development of every student.
+            </p>
+
+            <p class="text-gray-600 mb-8 leading-relaxed">
+              Our experienced teachers, modern infrastructure, and innovative
+              teaching methods help students grow intellectually, socially, and
+              emotionally to achieve their full potential.
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex gap-4">
+              <a
+                href="about.html"
+                class="bg-[#1F8A4C] text-white px-7 py-3 rounded-lg shadow hover:bg-[#0F6A3B] transition"
+              >
+                Read More
+              </a>
+
+              <a
+                href="admission.html"
+                class="border border-[#1F8A4C] text-[#1F8A4C] px-7 py-3 rounded-lg hover:bg-[#1F8A4C] hover:text-white transition"
+              >
+                Admission
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- School Highlights -->
+    <section class="py-14 bg-[#F5E6C8] text-white">
+      <div
+        class="text-neutral-600 max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
+      >
+        <div>
+          <h2 class="text-4xl font-bold">500+</h2>
+          <p class="mt-2 text-sm">Students</p>
+        </div>
+
+        <div>
+          <h2 class="text-4xl font-bold">40+</h2>
+          <p class="mt-2 text-sm">Qualified Teachers</p>
+        </div>
+
+        <div>
+          <h2 class="text-4xl font-bold">20+</h2>
+          <p class="mt-2 text-sm">Classrooms</p>
+        </div>
+
+        <div>
+          <h2 class="text-4xl font-bold">100%</h2>
+          <p class="mt-2 text-sm">Board Results</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-[#F5E6C8] text-white text-center">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-[#1F8A4C] text-3xl md:text-4xl font-bold mb-4">
+          Admissions Open 2026-27
+        </h2>
+
+        <p class="mb-6 text-lg text-gray-600">
+          Give your child the best education and a bright future at Pearly
+          International School.
+        </p>
+
+        <a
+          href="admission.html"
+          class="bg-white text-[#1F8A4C] px-6 py-3 rounded-lg font-semibold hover:bg-[#0F6A3B] hover:text-white transition"
+        >
+          Apply for Admission
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= JS ================= -->
+    <script>
+      let slideIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+      const dots = document.querySelectorAll(".dot");
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.style.opacity = i === index ? "1" : "0";
+          dots[i].style.opacity = i === index ? "1" : "0.5";
+        });
+      }
+
+      function nextSlide() {
+        slideIndex = (slideIndex + 1) % slides.length;
+        showSlide(slideIndex);
+      }
+
+      function prevSlide() {
+        slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+        showSlide(slideIndex);
+      }
+
+      function goSlide(i) {
+        slideIndex = i;
+        showSlide(slideIndex);
+      }
+
+      setInterval(nextSlide, 4000);
+    </script>
+
+    <!-- footer -->
+
+    <div id="footer"></div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
